@@ -7,6 +7,7 @@ import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 import orangeHRMPageClasses.*;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.*;
 import org.testng.asserts.SoftAssert;
 
@@ -39,7 +40,7 @@ public class OrangeHRMTest {
 
     @BeforeSuite(enabled = true)
     public void setup() throws Exception {
-        driver = new ChromeDriver();
+        driver = new FirefoxDriver();
         baseUrl = "https://opensource-demo.orangehrmlive.com/web/index.php/auth/login";
         loginPage = new LoginPage(driver);
         adminPage = new AdminPage(driver);
