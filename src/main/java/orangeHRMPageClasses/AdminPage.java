@@ -70,11 +70,11 @@ public class AdminPage {
     }
 
     public void sendEmployeeName() {
-        employeeName.sendKeys("Paul");
+        employeeName.sendKeys("afrin");
     }
 
     public void selectEmploymentName() {
-        String employeeNameValue = "Paul";
+        String employeeNameValue = "afrin";
         for (int i = 0; i < employeeNameList.size(); i++) {
             if (employeeNameList.get(i).getText().contains(employeeNameValue)) {
                 employeeNameList.get(i).click();
